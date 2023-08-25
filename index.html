@@ -14,9 +14,15 @@
         }
 
         body{
-            background: linear-gradient(#958dff, #ffb1f5);
+            background: linear-gradient(#ffeaaa, #91dbdb, #ffabd2);
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+
+
+        @font-face {
+            font-family:'Raleway' ;
+            src: url(font/Raleway-Regular.ttf);
         }
 
         .btn{
@@ -28,10 +34,20 @@
             transition: ease-in-out 0.4s;
             cursor: pointer;
             width: 200px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.507);
+        }
+
+        .botaoS{
+            transition: 0.4s;
+        }
+
+        .botaoS:hover{
+            transform: scale(0.8);
+            transition: 0.4s;
         }
 
         .tituloPrincipal{
-            font: 700 48px 'Poppins', sans-serif;
+            font: 700 50px 'Raleway', sans-serif;
         }
 
         .titulo{
@@ -43,7 +59,13 @@
         .botoes{
             display: flex;
             justify-content: space-between;
-            margin: 0 200px;
+            margin: 0 400px;
+
+        }
+
+        img{
+            width: 300px;
+            margin-top: 20px;
         }
 
         @media screen and (max-width: 400px){
@@ -54,9 +76,14 @@
                 align-items: center;
             }
 
+            .titulo img{
+                width: 120px;
+            }
+
             .botaoS{
                 padding-bottom: 30px;
             }
+
         }
 
         @media screen and (max-width: 768px){
@@ -65,6 +92,20 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
+                margin-bottom: 50px;
+            }
+
+            .titulo{
+                padding-bottom: 50px;
+                margin-top: 40px;
+            }
+
+            .tituloPrincipal{
+                font-size: 45px;
+            }
+
+            img{
+                width: 180px;
             }
 
              .botaoS{
@@ -77,6 +118,7 @@
 <body>
     <div class="titulo">
         <h1 class="tituloPrincipal">Quer sentir nostalgia?</h1>
+        <img src="fita.png" alt="">
     </div>
     <div class="botoes">
         <div class="botaoS">
